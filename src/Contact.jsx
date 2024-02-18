@@ -5,17 +5,17 @@ export default function Contact() {
         {
             title: "Phone",
             name: "+919660490556",
-            image: "../public/logo/icons8-phone-48.png"
+            image: "/logo/icons8-phone-48.png"
         },
         {
             title: "Email",
             name: "4444dhruv@gmail.com",
-            image: "../public/logo/icons8-email-48.png"
+            image: "/logo/icons8-email-48.png"
         },
         {
             title: "Location",
             name: "Gurugram, India",
-            image: "../public/logo/icons8-location-48.png"
+            image: "/logo/icons8-location-48.png"
         }
     ]);
 
