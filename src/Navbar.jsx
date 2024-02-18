@@ -4,7 +4,7 @@ import Contact from "./Contact"
 export default function Navbar() {
     const [details] = useState({
         name: "Dhruv Kumar Yadav",
-        roles: ['full stack developer', 'react native developer', 'UI/UX', 'Javascript developer']
+        roles: ['full stack developer', 'MERN stack developer', 'react native developer', 'UI/UX', 'Javascript developer']
     })
 
     return (<div className="navbar">
