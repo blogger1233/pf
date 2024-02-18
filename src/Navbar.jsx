@@ -31,28 +31,28 @@ export default function Navbar() {
                     <img
                         height={30}
                         width={30}
-                        src="../public/logo/icons8-linkedin-48.png"
+                        src="/logo/icons8-linkedin-48.png"
                     />
                 </a>
                 <a>
                     <img
                         height={30}
                         width={30}
-                        src="../public/logo/icons8-github-48.png"
+                        src="/logo/icons8-github-48.png"
                     />
                 </a>
                 <a>
                     <img
                         height={30}
                         width={30}
-                        src="../public/logo/icons8-twitter-48.png"
+                        src="/logo/icons8-twitter-48.png"
                     />
                 </a>
                 <a>
                     <img
                         height={30}
                         width={30}
-                        src="../public/logo/icons8-facebook.svg"
+                        src="/logo/icons8-facebook.svg"
                     />
                 </a>
             </div>

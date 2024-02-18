@@ -4,19 +4,19 @@ export default function Resume() {
     const [skills] = useState([
         {
             name: "expressjs",
-            logo: "../public/logo/icons8-express-js-50.png"
+            logo: "/logo/icons8-express-js-50.png"
         },
         {
             name: "mongodb",
-            logo: "../public/logo/icons8-mongodb-a-cross-platform-document-oriented-database-program-24.png"
+            logo: "/logo/icons8-mongodb-a-cross-platform-document-oriented-database-program-24.png"
         },
         {
             name: "reactjs and frameworks",
-            logo: "../public/logo/icons8-react-16.png"
+            logo: "/logo/icons8-react-16.png"
         },
         {
             name: "nodejs",
-            logo: "../public/logo/icons8-nodejs-48.png"
+            logo: "/logo/icons8-nodejs-48.png"
         },
         {
             name: "ffmpeg",
@@ -54,7 +54,7 @@ export default function Resume() {
         </ul>
         <h1 style={{ display: "flex", alignItems: "center", marginTop: "10px" }}>
             What i do! <img
-                src="../public/logo/icons8-coding-64.png"
+                src="/logo/icons8-coding-64.png"
                 height={30}
             />
         </h1>
