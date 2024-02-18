@@ -1,0 +1,167 @@
+*{
+  margin: 0;
+}
+@font-face {
+  font-family: font-light;
+  src: url('../public/Raleway/Raleway-Light.ttf');
+}
+@font-face {
+  font-family: font-medium;
+  src: url('../public/Raleway/Raleway-Medium.ttf');
+}
+@font-face {
+  font-family: font-bold;
+  src: url('../public/Raleway/Raleway-Bold.ttf');
+}
+@font-face {
+  font-family: font-italic;
+  src: url('../public/Raleway/Raleway-Italic.ttf');
+}
+@font-face {
+  font-family: font-italic-bold;
+  src: url('/Raleway/Raleway-BoldItalic.ttf');
+}
+.app{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 20% 70%;
+  grid-column-gap: 100px;
+  box-sizing: border-box;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f2f5f9;
+}
+.navbar{
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  height: 90vh;
+}
+.logo img{
+  height: 170px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(212,209,3,1) 0%, rgba(226,200,0,1) 100%);
+  border-radius: 10px;
+  position: relative;
+  top: -4vh;
+
+}
+.heading{
+  font-family: font-bold;
+  font-size: x-large;
+}
+.navbar p{
+  font-family: font-medium;
+}
+.resume{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  height: 100vh;
+  border-radius: 10px;
+  background-color: white;
+  height: 90vh;
+}
+.roles{
+  color: gray;
+  font-family: font-light;
+}
+.link{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  margin-top: 30px;
+}
+.link a{
+  background-color:#f2f7fc;
+  border-radius: 5px;
+  margin: 2px;
+  padding: 10px;
+  transition: 0.2s ease;
+}
+.link a:hover{
+  background-color: rgb(221, 221, 221);
+}
+.contact{
+  background-color: #f2f5f9;
+}
+.block{
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.block2{
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 255, 0.232);
+  align-items: center;
+  padding: 10px;
+}
+.block-title{
+  color: gray;
+  font-size: small;
+}
+.block-data{
+  font-family: font-bold;
+}
+.contact-img{
+  height: 20px;
+}
+.inner-block{
+  margin-left: 10px;
+}
+.block{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.resume-link {
+  text-align: center;
+  display: block;
+  border-radius: 10px;
+  font-weight: bold; /* Use font-weight instead of font-family for bold text */
+  color: white;
+  padding: 10px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 7, 233, 1) 0%, rgba(255, 65, 2, 1) 100%);
+
+
+}
+
+.resume-link:hover {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(195, 7, 178, 1) 0%, rgba(168, 42, 0, 1) 100%);
+}
+.resume h1{
+  padding: 10px;
+  font-family: font-medium;
+}
+.resume p{
+  padding: 10px;
+  font-family: font-medium;
+}
+.list-skills {
+  font-family: font-medium;
+}
+.list-skills img{
+  height: 25px;
+}
+@media screen and (max-width:1250px) {
+    .app{
+      grid-template-columns: none;
+      grid-template-rows: auto auto;
+      grid-row-gap: 50px;
+    }
+    .navbar{
+      margin: auto;
+      margin-top: 100px;
+      height: auto;
+      width: 90vw;
+      padding-bottom: 20px;
+    }
+    .resume{
+      width: 90vw;
+    }
+}
