@@ -3,23 +3,23 @@
 }
 @font-face {
   font-family: font-light;
-  src: url('../public/Raleway/Raleway-Light.ttf');
+  src: url('/Raleway/Raleway-Light.ttf');
 }
 @font-face {
   font-family: font-medium;
-  src: url('../public/Raleway/Raleway-Medium.ttf');
+  src: url('/Raleway/Raleway-Medium.ttf');
 }
 @font-face {
   font-family: font-bold;
-  src: url('../public/Raleway/Raleway-Bold.ttf');
+  src: url('/Raleway/Raleway-Bold.ttf');
 }
 @font-face {
   font-family: font-italic;
-  src: url('../public/Raleway/Raleway-Italic.ttf');
+  src: url('/Raleway/Raleway-Italic.ttf');
 }
 @font-face {
   font-family: font-italic-bold;
-  src: url('/Raleway/Raleway-BoldItalic.ttf');
+  src: url('/Raleway-BoldItalic.ttf');
 }
 .app{
   height: 100vh;
@@ -54,6 +54,7 @@
 .heading{
   font-family: font-bold;
   font-size: x-large;
+  color: rgb(29, 29, 29);
 }
 .navbar p{
   font-family: font-medium;
@@ -141,6 +142,7 @@
 .resume p{
   padding: 10px;
   font-family: font-medium;
+  color: rgb(29, 29, 29);
 }
 .list-skills {
   font-family: font-medium;
@@ -148,8 +150,32 @@
 .list-skills img{
   height: 25px;
 }
+.grid-whatido{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  box-sizing: border-box;
+  padding: 10px;
+  grid-gap: 10px;
+}
+.child-whatido{
+   padding: 10px;
+   background-color: gray;
+   display: inline-block;
+   border-radius: 10px;
+
+}
+.child-whatido h2{
+  font-family: font-light;
+  display: flex;
+  align-items: center;
+}
+.child-whatido p{
+  font-family: font-light;
+}
 @media screen and (max-width:1250px) {
     .app{
+      height: auto;
       grid-template-columns: none;
       grid-template-rows: auto auto;
       grid-row-gap: 50px;
@@ -163,5 +189,12 @@
     }
     .resume{
       width: 90vw;
+      height: auto;
     }
+}
+@media screen and (max-width: 592px) {
+  .grid-whatido {
+    grid-template-columns: none;
+    grid-template-rows: auto auto
+  }
 }

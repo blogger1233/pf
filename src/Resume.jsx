@@ -1,6 +1,20 @@
 import { useState } from "react"
 
 export default function Resume() {
+    const [whatido] = useState([
+        {
+            icon: "/logo/icons8-coding-64.png",
+            title: "web development",
+            desc: "Elevating your online presence, I specialize in crafting dynamic and responsive websites using leading web frameworks like Django and Flask. From sleek user interfaces to robust backend systems, I bring your digital vision to life with expertise in technologies such as Django Rest Framework, FastAPI, and Flask Restx."
+
+        },
+        {
+            icon: "/logo/icons8-portrait-mode-scanning-50.png",
+            title: "web scrapping",
+            desc: "Unleashing the power of web scraping, I extract valuable data from online sources to fuel your decision-making processes. Specializing in precision scraping techniques, I navigate the web's vast landscape to provide accurate and actionable insights, from competitor analysis to market research."
+
+        }
+    ])
     const [skills] = useState([
         {
             name: "expressjs",
@@ -53,11 +67,39 @@ export default function Resume() {
             }
         </ul>
         <h1 style={{ display: "flex", alignItems: "center", marginTop: "10px" }}>
-            What i do! <img
-                src="/logo/icons8-coding-64.png"
-                height={30}
-            />
+            What i do! 👨🏻‍💻
         </h1>
-        <p>editing still continue....</p>
+        <div className="grid-whatido">
+            {
+                whatido.map((value, key) => {
+                    if (key % 2 != 0) {
+                        return (<div style={{ backgroundColor: "#ffebd0" }} className="child-whatido" key={key}>
+                            <h2>{value.title} <img
+                                height={25}
+                                src={value.icon}
+                            /></h2>
+                            <p>
+                                {value.desc}
+                            </p>
+                        </div>)
+                    }
+                    else {
+                        return (<div style={{ backgroundColor: "#f2f7fc" }} className="child-whatido" key={key}>
+                            <h2>{value.title}
+                                <img
+                                    height={25}
+                                    src={value.icon}
+                                />
+
+                            </h2>
+                            <p>
+                                {value.desc}
+                            </p>
+                        </div>)
+                    }
+
+                })
+            }
+        </div>
     </div>)
 }
